@@ -1,0 +1,47 @@
+body {
+    width: 1000px;
+    height: 1800px;
+    margin: 0 auto;
+}
+h1 {
+    text-align: center;
+    letter-spacing: 10px;
+    color:white;
+}
+h2 {
+    text-align: center;
+    margin-top: 500px;
+}
+#div-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.button-style {
+    border: none;
+    color: #0f0f0f;
+    padding: 8px 10px;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    width: 50px;
+}
+h3 {
+    margin-top: -480px;
+    margin-left: 70px;
+}
+h4 {
+    margin-top: -300px;
+    margin-left: 750px;
+}
+h5 {
+    margin-top: -400px;
+    margin-left: 200px;
+}
+h6 {
+    margin-top: -400px;
+    margin-left: 60px;
+    width: 200px;
+    height: 60px;
+}
