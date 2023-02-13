@@ -4,17 +4,11 @@ const DivContainer = document.getElementById('div-container');
 function prepareGame () {
     word = document.getElementById('word').value;
     if (word.indexOf(" ") >-1) {
-        document.getElementById('div-container').innerHTML = 'Please write a word without spaces!';
-        document.getElementById('div-container').style = 'color: black; background: white';
-        document.getElementById('div-container').style.fontSize = 'x-large';
-        document.getElementById('btn-restart').hidden = false;
-        document.getElementById('word').value = "";
+        let message = 'Please write a word without spaces!';
+        displayMessage(message);
     } else if (word.length < 2 || word.length > 20) {
-        document.getElementById('div-container').innerHTML = 'Please write a word between 2 and 20 letters!';
-        document.getElementById('div-container').style = 'color: black; background: white';
-        document.getElementById('div-container').style.fontSize = 'x-large';
-        document.getElementById('btn-restart').hidden = false;
-        document.getElementById('word').value = '';
+        let message = 'Please write a word between 2 and 20 letters!';
+        displayMessage(message);
     } else {
         wordUpperCase = word.toUpperCase();
         lengthWord = wordUpperCase.length;
@@ -29,16 +23,15 @@ function prepareGame () {
         }
     document.getElementById('word').value = '';
     }
+    document.getElementById('btn-start').disabled = true;
 }
 
 let gameOver = 0, wrongAnswer = 11;
 
 function clickButton (clicked_id) {
     if (gameOver == 1) {
-        document.getElementById('div-container').innerHTML = "The game is over! Please press Restart!";
-        document.getElementById('div-container').style = 'color: black; background: white';
-        document.getElementById('div-container').style.fontSize = 'x-large';
-        document.getElementById('counter').innerHTML = '';
+        let message = 'The game is over! Please press Restart!';
+        displayMessage(message);
         return;
     }
     document.getElementById('counter').innerHTML = wrongAnswer - 1 + ' attempts left';
@@ -68,4 +61,13 @@ function clickButton (clicked_id) {
     }
     document.getElementById('btn-restart').hidden = false;
     document.getElementById(clicked_id).style.visibility = 'hidden';
+}
+
+function displayMessage (message) {
+    document.getElementById('div-container').innerHTML = message;
+    document.getElementById('div-container').style = 'color: black; background: white';
+    document.getElementById('div-container').style.fontSize = 'x-large';
+    document.getElementById('btn-restart').hidden = false;
+    document.getElementById('word').value = '';
+    document.getElementById('counter').innerHTML = '';
 }
