@@ -1,6 +1,6 @@
 const ctx = document.getElementById('canvas').getContext('2d');
 
-function firstHorizontal () {
+function firstHorizontal() {
     ctx.beginPath();
     ctx.lineWidth = 6;
     ctx.moveTo(180,300);
@@ -8,7 +8,7 @@ function firstHorizontal () {
     ctx.stroke();
 }
 
-function verticalLine () {
+function verticalLine() {
     ctx.beginPath();
     ctx.lineWidth = 6;
     ctx.moveTo(215,300);
@@ -16,7 +16,7 @@ function verticalLine () {
     ctx.stroke();
 }
 
-function secondHorizontal () {
+function secondHorizontal() {
     ctx.beginPath();
     ctx.lineWidth = 6;
     ctx.moveTo(198,60);
@@ -24,14 +24,14 @@ function secondHorizontal () {
     ctx.stroke();
 }
 
-function head () {
+function head() {
     ctx.beginPath();
     ctx.lineWidth = 6;
     ctx.arc(327,142,25,250,360,false);
     ctx.stroke();
 }
 
-function neck () {
+function neck() {
     ctx.beginPath();
     ctx.lineWidth = 5;
     ctx.moveTo(328,165);
@@ -39,7 +39,7 @@ function neck () {
     ctx.stroke();
 }
 
-function leftHand () {
+function leftHand() {
     ctx.beginPath();
     ctx.lineWidth = 6;
     ctx.moveTo(328,180);
@@ -47,7 +47,7 @@ function leftHand () {
     ctx.stroke();
 }
 
-function rightHand () {
+function rightHand() {
     ctx.beginPath();
     ctx.lineWidth = 6;
     ctx.moveTo(328,180);
@@ -55,7 +55,7 @@ function rightHand () {
     ctx.stroke();
 }
 
-function body () {
+function body() {
     ctx.beginPath();
     ctx.lineWidth = 6;
     ctx.moveTo(328,200);
@@ -63,7 +63,7 @@ function body () {
     ctx.stroke();
 }
 
-function leftLeg () {
+function leftLeg() {
     ctx.beginPath();
     ctx.lineWidth = 6;
     ctx.moveTo(328,250);
@@ -71,7 +71,7 @@ function leftLeg () {
     ctx.stroke();
 }
 
-function rightLeg () {
+function rightLeg() {
     ctx.beginPath();
     ctx.lineWidth = 6;
     ctx.moveTo(328,250);
@@ -79,7 +79,7 @@ function rightLeg () {
     ctx.stroke();
 }
 
-function rope () {
+function rope() {
     ctx.beginPath();
     ctx.lineWidth = 6;
     ctx.moveTo(328,60);

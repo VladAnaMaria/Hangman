@@ -1,7 +1,7 @@
 let word, wordUpperCase, lengthWord, counter, div, divArray = Array();
 const DivContainer = document.getElementById('div-container');
 
-function prepareGame () {
+function prepareGame() {
     word = document.getElementById('word').value;
     if (word.indexOf(" ") >-1) {
         let message = 'Please write a word without spaces!';
@@ -28,7 +28,7 @@ function prepareGame () {
 
 let gameOver = 0, wrongAnswer = 11;
 
-function clickButton (clicked_id) {
+function clickButton(clicked_id) {
     if (gameOver == 1) {
         let message = 'The game is over! Please press Restart!';
         displayMessage(message);
@@ -63,7 +63,7 @@ function clickButton (clicked_id) {
     document.getElementById(clicked_id).style.visibility = 'hidden';
 }
 
-function displayMessage (message) {
+function displayMessage(message) {
     document.getElementById('div-container').innerHTML = message;
     document.getElementById('div-container').style = 'color: black; background: white';
     document.getElementById('div-container').style.fontSize = 'x-large';
